@@ -1,13 +1,13 @@
 import './App.css';
+import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
-import Players from './components/Player/Players';
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <Players />
+        <Main />
       </div>
     </>
   );
