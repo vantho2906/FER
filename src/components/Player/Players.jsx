@@ -16,23 +16,23 @@ const Players = ({players}) => {
               {playerItem.name}
             </h2>
             <p>
-              <button
-                onClick={() => {
-                  setPlayer(playerItem);
-                }}
-                className="bg-black text-white w-full text-lg rounded-lg py-2 hover:opacity-70"
-              >
-                <a href="#popup1" id="openPopUp">
+              <a className="w-full" href="#popup1" id="openPopUp">
+                <button
+                  onClick={() => {
+                    setPlayer(playerItem);
+                  }}
+                  className="bg-black text-white w-full text-lg rounded-lg py-2 hover:opacity-70"
+                >
                   Detail
-                </a>
-              </button>
+                </button>
+              </a>
             </p>
           </div>
         ))}
         <div id="popup1" className="overlay">
           <div className="popup">
             <img src={player.img} alt="" />
-            <h2>{player.name}</h2>
+            <h2 className='font-bold'>{player.name}</h2>
             <a href="#" className="close">
               &times;
             </a>
