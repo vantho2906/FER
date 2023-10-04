@@ -2,10 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main';
 import Navigation from './components/Navigation';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import News from './pages/News';
-import Detail from './pages/Detail';
+import About from './components/About';
+import Contact from './components/Contact';
+import News from './components/News';
+import Detail from './components/Detail';
 function App() {
   return (
     <BrowserRouter>
